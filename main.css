@@ -1,0 +1,257 @@
+* {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee24;
+}
+
+/* Header */
+header {
+    background-color: orange;
+
+}
+
+header .head {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10rem;
+}
+
+/* Image Animation */
+.head img {
+    animation: moveUpDown 3s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.content h1,
+h5 {
+    color: white;
+    text-align: left !important;
+}
+
+header img {
+    border-radius: 50%;
+    /* margin-right: 50%; */
+}
+
+/* Contact */
+.contact {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Left Side */
+.left h2 {
+    margin-bottom: 15px;
+    margin-left: 10%;
+    font-size: 35px;
+}
+
+.contact .personal-info {
+    font-size: 20px;
+}
+
+.contact .personal-info address {
+    display: inline;
+}
+
+.contact .personal-info i {
+    margin-right: 3px;
+    line-height: 2;
+}
+
+.contact .personal-info a {
+    text-decoration: none;
+}
+
+.languages {
+    margin-top: 3rem;
+}
+
+.languages meter {
+    height: 2rem;
+    width: 90%;
+    display: block;
+}
+
+/* Languages Meters */
+meter::-webkit-meter-bar {
+    background: #FFF;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: linear-gradient(to bottom, #ffa500, #ffa530);
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background: linear-gradient(to bottom, #4b0082, #4b0082);
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background: linear-gradient(to bottom, red, red);
+}
+
+.skills {
+    margin-top: 3rem;
+}
+
+.skills meter {
+    border-radius: 50%;
+}
+
+/* Apply css properties to h1 element */
+h1 {
+    text-align: center;
+}
+
+/* Create a container using css properties */
+.container {
+    left: 40%;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+    position: relative;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 9rem;
+    margin: 1.5rem;
+    border: 1.2rem solid #78dbf9;
+    box-shadow: inset 0 0 7px grey;
+    border-left-color: red;
+    border-top-color: yellow;
+    border-right-color: #78dbf9;
+    border-bottom-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ui-widgets:nth-child(3) {
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-values class */
+.ui-widgets .ui-values {
+    top: 0.5rem;
+    position: absolute;
+    left: 0.1rem;
+    right: 0;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-labels class */
+.ui-widgets .ui-labels {
+    left: 0;
+    bottom: -20px;
+    text-shadow: 0 0 4px grey;
+    color: black;
+    position: absolute;
+    width: 100%;
+    font-size: 16px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    margin-right: 30%;
+    font-size: 10px;
+}
+
+.fa-facebook:before {
+    color: darkblue;
+    display: inline-block;
+    width: 25px;
+}
+
+.fa-google-plus:before {
+    color: red;
+}
+
+/* Right */
+.right h2 {
+    margin: 0 7% 15px -5%;
+    background-color: orange;
+    font-size: 35px;
+    color: white;
+    padding-left: 2.7rem;
+}
+
+.contact .paragraph {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact .paragraph p {
+    margin-top: -5px;
+}
+
+.additional {
+    margin-top: -2.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.gify-container {
+    position: relative;
+    top: 2.6rem;
+}
+
+.gify {
+    animation: move 20s linear infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(1150%);
+    }
+
+    to {
+        transform: translateX(-7.5rem);
+    }
+}
+
+/* Footer */
+footer p {
+    position: relative;
+    top: 1.5rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.test:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 1.5rem;
+    background: linear-gradient(90deg, rgba(250, 0, 0, 1) 33%, rgba(228, 154, 2, 1) 33%, rgba(228, 143, 2, 1) 68%, rgb(120 219 249) 68%);
+}
